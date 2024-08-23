@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.05.2
+%define		kdeappsver	24.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kigo
 Summary:	kigo
 Name:		ka6-%{kaname}
-Version:	24.05.2
+Version:	24.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	f97c7bb6a9ec4aa7380275d13c3d21af
+# Source0-md5:	9b2fb72f1139cd4161f96994be7f5367
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -87,3 +87,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/knsrcfiles/kigo-games.knsrc
 %{_datadir}/knsrcfiles/kigo.knsrc
 %{_datadir}/qlogging-categories6/kigo.categories
+%{_datadir}/qlogging-categories6/kigo.renamecategories
