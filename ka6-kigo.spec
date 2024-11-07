@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.08.2
+%define		kdeappsver	24.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kigo
 Summary:	kigo
 Name:		ka6-%{kaname}
-Version:	24.08.2
+Version:	24.08.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	1fa3dc7a7816d308b4117ce740ac3686
+# Source0-md5:	5b3d82a93eaaf84a8b4e7461372edce7
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel >= 5.11.1
